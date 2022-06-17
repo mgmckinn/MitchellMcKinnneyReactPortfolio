@@ -44,7 +44,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid var(--primary-white);
 }
 
 .navbar-brand {
@@ -327,7 +327,7 @@ nav ul li {
 }
 
 .portfolio-image {
-  width: 15rem;
+  width: 30rem;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
 }

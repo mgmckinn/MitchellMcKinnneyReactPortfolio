@@ -1,6 +1,8 @@
 import React from "react";
-import RunBuddy from "./images/run-buddy.png";
-
+import RunBuddy from "../images/./avatars/runbuddy.jpg";
+import MysteryStation from "../images/./avatars/butlerstation.png";
+import workoutBuddy from "../images/./avatars/workoutbuddy.png";
+import pwGen from "../images/./avatars/pwGen.png";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -12,8 +14,8 @@ import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
 
-  // Netflix
-  const openPopupboxNetflix = () => {
+  // RunBuddy
+  const openPopupboxRunBuddy = () => {
     const content = (
       <>
         <img
@@ -30,60 +32,88 @@ const Portfolio = () => {
           className="hyper-link"
           onClick={() => window.open("https://mgmckinn.github.io/run-buddy-1/")}
         >
-          https://github.com/8020Coding/netflix-project
+          https://mgmckinn.github.io/run-buddy-1/
         </a>
       </>
     );
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigNetflix = {
+  const popupboxConfigRunBuddy = {
     titleBar: {
       enable: true,
-      text: "Netflix clone project."
+      text: "Run Buddy"
     },
     fadeIn: true,
     fadeInSpeed: 500
-  }
+  };
 
-  // City Guide App
+  // Mystery at Butler Station
   const openPopupboxCityGuide = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={cityGuide} alt="City Guide App Project..." />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://city-guide-app-project.herokuapp.com/", "_blank")}>https://city-guide-app-project.herokuapp.com/</a>
+        <img
+          className="portfolio-image-popupbox"
+          src={MysteryStation}
+          alt="Second Group"
+        />
+        <p>
+         A fullstack application made with canvas. Trivia Game. 
+        </p>
+        <b>Demo:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open(
+              "https://mystery-of-butler-station.herokuapp.com/",
+              "_blank"
+            )
+          }
+        >
+          https://mystery-of-butler-station.herokuapp.com/
+        </a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/city-guide-app", "_blank")}>https://github.com/8020Coding/city-guide-app</a>
+        <b>GitHub:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open(
+              "https://github.com/gsd79/Mystery-of-Butler-Station",
+              "_blank"
+            )
+          }
+        >
+          https://github.com/gsd79/Mystery-of-Butler-Station
+        </a>
       </>
-    )
+    );
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigCityGuide = {
+  const popupboxMystery = {
     titleBar: {
       enable: true,
-      text: "City Guide App project."
+      text: "Mystery of Butler Station"
     },
     fadeIn: true,
     fadeInSpeed: 500
   }
 
-  // Portfolio Project
+  // Workout Buddy
   const openPopupboxPortfolio = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={portfolio} alt="Portfolio Project..." />
+        <img className="portfolio-image-popupbox" src={workoutBuddy} alt="Portfolio Project..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>https://portfolio-rea-and-material-ui.herokuapp.com/</a>
+        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/gsd79/Workout-Buddy", "_blank")}>https://github.com/gsd79/Workout-Buddy</a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/portfilio", "_blank")}>https://github.com/8020Coding/portfilio</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("", "_blank")}></a>
       </>
     )
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigPortfolio = {
+  const popupboxworkoutbuddy = {
     titleBar: {
       enable: true,
       text: "Poftfolio React and Material UI project."
@@ -92,24 +122,24 @@ const Portfolio = () => {
     fadeInSpeed: 500
   }
 
+
   // Task Manager React and Redux Project
   const openPopupboxTaskManager = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={taskManager} alt="Task Manager React and Redux Project..." />
+        <img className="portfolio-image-popupbox" src={pwGen} alt="" />Password Generator with  javaScript
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
-        <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://react-redux-task-manager.herokuapp.com/", "_blank")}>https://react-redux-task-manager.herokuapp.com/</a>
         <br />
-        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/task-manager", "_blank")}>https://github.com/8020Coding/task-manager</a>
+        <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://mgmckinn.github.io/mgm-password-genie-html.css.js/", "_blank")}>https://mgmckinn.github.io/mgm-password-genie-html.css.js/</a>
       </>
     )
     PopupboxManager.open({ content })
   }
 
-  const popupboxConfigTaskManager = {
+  const popupbox = {
     titleBar: {
       enable: true,
-      text: "Task Manager React and Redux project."
+      text: "Random password generator"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -121,37 +151,38 @@ const Portfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-            <img className="portfolio-image" src={netflix} alt="Netflix Clone Project..." />
+          <div className="portfolio-image-box" onClick={openPopupboxRunBuddy}>
+            <img className="portfolio-image" src={RunBuddy} alt="First project in Butler Bootcamp using HTML and CSS" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          {/* - */}
+          
           <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
-            <img className="portfolio-image" src={cityGuide} alt="City Guide Project..." />
+            <img className="portfolio-image" src={MysteryStation} alt="Mystery of Butler Station" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          {/* - */}
+          
           <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
-            <img className="portfolio-image" src={portfolio} alt="Portfolio React and Material UI Project..." />
+            <img className="portfolio-image" src={workoutBuddy} alt="MERN Project" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
-          {/* - */}
+          </div> 
+          
           <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
-            <img className="portfolio-image" src={taskManager} alt="Task Manager React and Redux Project..." />
+            <img className="portfolio-image" src={pwGen} alt=" Random Passwork Generator using Javascript" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-        </div>
+        </div> 
       </div>
-      <PopupboxContainer {...popupboxConfigNetflix} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
-      <PopupboxContainer {...popupboxConfigPortfolio} />
-      <PopupboxContainer {...popupboxConfigTaskManager} />
-    </div>
-  )
+      <PopupboxContainer {...popupboxConfigRunBuddy} />
+      <PopupboxContainer {...popupboxMystery} /> 
+      <PopupboxContainer {...popupboxworkoutbuddy} />
+      <PopupboxContainer {...popupbox} />  
+    </div> 
+  );
 }
+
 
 export default Portfolio;

@@ -3,10 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-
+import AboutMe from "./components/AboutMe"
 import Portfolio from "./components/Portfolio";
-
+import React from "react";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 

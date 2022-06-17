@@ -17,13 +17,13 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
-              <p>city Moscow Main st 2020 office #223</p>
+              <p>Da Medford, Noblesville, IN</p>
             </div>
             <div className="d-flex">
-              <a href="tel:555-555-555">+7(960)555-5555</a>
+              <a href="tel:812-483-9557">(812)-483-9557</a>
             </div>
             <div className="d-flex">
-              <p>8020coding@gmail.com</p>
+              <p>mgmckinn2325@me.com</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-2 col-sm-6">
@@ -31,13 +31,10 @@ const Footer = () => {
               <div className="col">
                 <a className="footer-nav">Home</a>
                 <br />
-                <a className="footer-nav">About me</a>
+                <a className="footer-nav">About Me</a>
                 <br />
-                <a className="footer-nav">Services</a>
-              </div>
-              <div className="col">
-                <a className="footer-nav">Experience</a>
-                <br />
+             
+             
                 <a className="footer-nav">Portfolio</a>
                 <br />
                 <a className="footer-nav">Contacts</a>
@@ -47,28 +44,28 @@ const Footer = () => {
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton
-                url={"https://www.youtube.com/8020coding"}
+                // url={"https://www.youtube.com/8020coding"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
                 <FacebookIcon className="mx-3" size={36} />
               </FacebookShareButton>
               <TwitterShareButton
-                url={"https://www.youtube.com/8020coding"}
+                // url={"https://www.youtube.com/8020coding"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
                 <TwitterIcon className="mx-3" size={36} />
               </TwitterShareButton>
               <RedditShareButton
-                url={"https://www.youtube.com/8020coding"}
+                // url={"https://www.youtube.com/8020coding"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
                 <RedditIcon className="mx-3" size={36} />
               </RedditShareButton>
               <LinkedinShareButton
-                url={"https://www.youtube.com/8020coding"}
+                // url={"https://www.youtube.com/8020coding"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
@@ -77,7 +74,7 @@ const Footer = () => {
             </div>
             <p className="pt-3 text-center">
               Copyright&copy;
-              {new Date().getFullYear()}&nbsp;New Horizon | All Rights Reserved
+              {new Date().getFullYear()}&nbsp;MGM | All Rights Reserved
             </p>
           </div>
         </div>
