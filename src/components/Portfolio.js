@@ -58,7 +58,7 @@ const Portfolio = () => {
           alt="Second Group"
         />
         <p>
-         A fullstack application made with canvas. Trivia Game. 
+          A fullstack application made with canvas. Trivia Game. 
         </p>
         <b>Demo:</b>{" "}
         <a
@@ -98,13 +98,12 @@ const Portfolio = () => {
     fadeIn: true,
     fadeInSpeed: 500
   }
-
   // Workout Buddy
   const openPopupboxPortfolio = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={workoutBuddy} alt="Portfolio Project..." />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
+        <p>Group Project for Butler Bootcamp-full stack MERN application</p>
         <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/gsd79/Workout-Buddy", "_blank")}>https://github.com/gsd79/Workout-Buddy</a>
         <br />
         <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("", "_blank")}></a>
@@ -116,7 +115,7 @@ const Portfolio = () => {
   const popupboxworkoutbuddy = {
     titleBar: {
       enable: true,
-      text: "Poftfolio React and Material UI project."
+      text: "MERN Application"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -170,7 +169,7 @@ const Portfolio = () => {
           </div> 
           
           <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
-            <img className="portfolio-image" src={pwGen} alt=" Random Passwork Generator using Javascript" />
+            <img className="portfolio-image" src={pwGen} alt=" Random Password Generator using Javascript" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>

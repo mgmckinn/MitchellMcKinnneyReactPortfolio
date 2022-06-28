@@ -7,7 +7,7 @@ import {
   RedditShareButton,
   RedditIcon,
   LinkedinShareButton,
-  LinkedinIcon
+  LinkedinIcon,
 } from "react-share";
 
 const Footer = () => {
@@ -33,8 +33,6 @@ const Footer = () => {
                 <br />
                 <a className="footer-nav">About Me</a>
                 <br />
-             
-             
                 <a className="footer-nav">Portfolio</a>
                 <br />
                 <a className="footer-nav">Contacts</a>
@@ -74,13 +72,13 @@ const Footer = () => {
             </div>
             <p className="pt-3 text-center">
               Copyright&copy;
-              {new Date().getFullYear()}&nbsp;MGM | All Rights Reserved
+              {new Date().getFullYear()}&nbsp;MGMCKINN | All Rights Reserved
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;
