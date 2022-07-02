@@ -340,11 +340,11 @@ nav ul li {
 /*------------ OVERFLOW BOX ------------------*/
 .overflow {
   position: absolute;
-   opacity: 0;
-   background: var(--primary-black);
-   width: 30rem;
-   height: 23rem;
-   top: 0;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 100%;
+  height: 100%;
+  top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
 }
